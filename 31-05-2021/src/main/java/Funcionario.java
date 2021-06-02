@@ -6,7 +6,6 @@ public class Funcionario {
     private float salarioBruto;
     private  float totalAcrescimos;
     private float totalDescontos;
-    private List<Map<String, Float>> acrescimos;
 
     public float calcularSalarioLiquido(){
         return salarioBruto + totalAcrescimos - totalDescontos;
