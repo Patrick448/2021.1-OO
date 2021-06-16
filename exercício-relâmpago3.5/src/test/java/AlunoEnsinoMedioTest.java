@@ -10,8 +10,6 @@ class AlunoEnsinoMedioTest {
     @BeforeEach
     void setup(){
         alunoEnsinoMedio = new AlunoEnsinoMedio();
-        alunoEnsinoMedio.setMatricula(1234);
-        alunoEnsinoMedio.setNome("Maria da Silva");
     }
 
     @Test

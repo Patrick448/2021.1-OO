@@ -9,7 +9,7 @@ class ProfessorTest {
     @BeforeEach
     void setup(){
         professor = new Professor();
-        professor.setNome("Maria da Silva");
+
     }
 
     @Test
