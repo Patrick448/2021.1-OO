@@ -1,15 +1,15 @@
 public class TipoEnsino {
-    private String tipo;
+    private String descricao;
 
-    public String getTipo() {
-        return this.tipo;
+    public String getDescricao() {
+        return this.descricao;
     }
 
-    public TipoEnsino(String tipo) {
-        this.tipo = tipo;
+    public TipoEnsino(String descricao) {
+        this.descricao = descricao;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }

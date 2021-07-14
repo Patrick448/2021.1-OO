@@ -3,6 +3,12 @@ public class Curso {
     private TipoEnsino tipoEnsino;
     private Escola escola;
 
+    public Curso(Professor coordenador, TipoEnsino tipoEnsino, Escola escola) {
+        this.coordenador = coordenador;
+        this.tipoEnsino = tipoEnsino;
+        this.escola = escola;
+    }
+
     public Professor getCoordenador() {
         return this.coordenador;
     }
@@ -25,5 +31,12 @@ public class Curso {
 
     public void setEscola(Escola escola) {
         this.escola = escola;
+    }
+
+    public String getDescricaoEscolaridadeCoordenador(){
+        if(this.coordenador == null)
+            throw new NullPointerException("Coordenador nao definido");
+
+        return this.coordenador.getDescriçãoEscolaridade();
     }
 }

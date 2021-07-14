@@ -1,15 +1,15 @@
 public class Escolaridade {
-    private String nivel;
+    private String descricao;
 
-    public Escolaridade(String nivel) {
-        this.nivel = nivel;
+    public Escolaridade(String descricao) {
+        this.descricao = descricao;
     }
 
-    public String getNivel() {
-        return this.nivel;
+    public String getDescricao() {
+        return this.descricao;
     }
 
-    public void setNivel(String nivel) {
-        this.nivel = nivel;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }

@@ -3,6 +3,11 @@ public class Escola {
     private Cidade cidade;
     private String nome;
 
+    public Escola(Professor diretor, Cidade cidade) {
+        this.diretor = diretor;
+        this.cidade = cidade;
+    }
+
     public Professor getDiretor() {
         return this.diretor;
     }
@@ -25,5 +30,9 @@ public class Escola {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getDescricaoEscolaridadeDiretor(){
+        return diretor.getDescriçãoEscolaridade();
     }
 }
