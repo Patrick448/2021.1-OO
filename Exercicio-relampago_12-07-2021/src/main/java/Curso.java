@@ -34,8 +34,6 @@ public class Curso {
     }
 
     public String getDescricaoEscolaridadeCoordenador(){
-        if(this.coordenador == null)
-            throw new NullPointerException("Coordenador nao definido");
 
         return this.coordenador.getDescriçãoEscolaridade();
     }
