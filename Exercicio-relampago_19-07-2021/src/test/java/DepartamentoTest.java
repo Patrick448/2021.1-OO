@@ -6,9 +6,6 @@ class DepartamentoTest {
 
     @Test
     void deveRetornarEscolaridadeChefeDepartamento() {
-        Pais pais = new Pais("Brasil");
-        Estado estado = new Estado(pais);
-        Cidade cidade = new Cidade(estado);
         Empresa empresa = new Empresa();
         Departamento  departamento = new Departamento(empresa);
         Funcionario chefe = new Funcionario();

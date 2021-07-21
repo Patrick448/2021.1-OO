@@ -6,12 +6,7 @@ class GrupoTest {
 
     @Test
     void deveRetornarEscolaridadePresidenteGrupo() {
-        Pais pais = new Pais("Brasil");
-        Estado estado = new Estado(pais);
-        Cidade cidade = new Cidade(estado);
-        Empresa empresa = new Empresa();
-        Filial filial = new Filial(cidade, empresa);
-        Departamento  departamento = new Departamento(empresa);
+
         Funcionario presidente = new Funcionario();
         presidente.setEscolaridade(new Escolaridade("Superior"));
 
@@ -30,12 +25,7 @@ class GrupoTest {
     @Test
     void deveRetornarEscolaridadeNaoDefinidaPresidenteGrupo() {
 
-        Pais pais = new Pais("Brasil");
-        Estado estado = new Estado(pais);
-        Cidade cidade = new Cidade(estado);
-        Empresa empresa = new Empresa();
-        Filial filial = new Filial(cidade, empresa);
-        Departamento  departamento = new Departamento(empresa);
+
         Funcionario presidente = new Funcionario();
 
         Grupo grupo = new Grupo();

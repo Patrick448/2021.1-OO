@@ -4,12 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class EmpresaTest {
 
-
     @Test
     void deveRetornarNomeDiretorEmpresa() {
-        Pais pais = new Pais("Brasil");
-        Estado estado = new Estado(pais);
-        Cidade cidade = new Cidade(estado);
 
         Funcionario diretor = new Funcionario();
         diretor.setNome("Roberto");

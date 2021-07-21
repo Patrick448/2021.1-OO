@@ -34,7 +34,7 @@ class FuncionarioTest {
         Estado estado = new Estado(pais);
         Cidade cidade = new Cidade(estado);
         Empresa empresa = new Empresa();
-        Departamento departamento = new Departamento(empresa);
+
         Filial filial = new Filial(cidade, empresa);
         Funcionario funcionario = new Funcionario(filial);
 
@@ -48,7 +48,7 @@ class FuncionarioTest {
         estado.setNome("MG");
         Cidade cidade = new Cidade(estado);
         Empresa empresa = new Empresa();
-        Departamento departamento = new Departamento(empresa);
+
         Filial filial = new Filial(cidade, empresa);
         Funcionario funcionario = new Funcionario();
         funcionario.setFilialCoodenacao(filial);
@@ -58,12 +58,7 @@ class FuncionarioTest {
 
     @Test
     void deveRetornarFuncionarioNaoCoordenaFilial() {
-        Pais pais = new Pais("Brasil");
-        Estado estado = new Estado(pais);
-        estado.setNome("MG");
-        Cidade cidade = new Cidade(estado);
-        Empresa empresa = new Empresa();
-        Departamento departamento = new Departamento(empresa);
+
         Funcionario funcionario = new Funcionario();
 
         assertEquals("funcionario nao coordena filial", funcionario.getNomeEstadoFilialCoordenacao());
